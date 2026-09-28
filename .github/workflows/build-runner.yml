@@ -23,7 +23,7 @@ jobs:
         workspaces: packages/paperclip-runner/runner
 
     - name: Build paperclip-runnerd
-      run: cargo build --release --manifest-path packages/paperclip-runner/runner/Cargo.toml --locked -p paperclip-runner-core --bin paperclip-runnerd
+      run: cargo build --release --manifest-path runner/Cargo.toml --locked -p paperclip-runner-core --bin paperclip-runnerd
       working-directory: packages/paperclip-runner
 
     - name: Upload binary
